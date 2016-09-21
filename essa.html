@@ -3,10 +3,11 @@
 </head>
 <body>
 
-<form>
-Username: <input type="text"/>
-Password: <input type = "password"/>
-<input type="submit" value = "Submit!" />
+<!-- this is form 0 -->
+<form name = "koikson">
+Username: <input type="text" name="usersname"/>
+Password: <input type = "password" name="password" />
+<input type="submit" value = "Submit!" /> 
 
 </form>
 
@@ -15,13 +16,20 @@ Password: <input type = "password"/>
 //see hüüumärk ütleb vanadele browseritele, et ära pane tähele, lihtsalt comment
 <!--
 
-//esimese vormi elementide arv salvestagem muutujasse x. seal on 3 elementi: 2 välja ja üks nupp.
+//esimese vormi elementide arv salvestagem muutujasse x. seal on 3 elementi: 2 välja ja üks nupp. Using the built-in forms array and dance .
 var x = document.forms[0].length;
 
 //prindi välja, mitu elementi said muutujass x
-document.write(x);
+document.write(x + " hey now brown cow");
 
-document.write("hey now brown cow");
+//save the name of element 0 in form 0 to variable y and showmeshowme
+var y = document.forms[0].elements[1].name;
+document.write(y);
+
+//that arrays thing requires precision. go ahead and use the name of it instead. makes sense.
+var z = document.forms.koikson.password.name;
+document.write(z);
+
 
 //-->
 </script>
