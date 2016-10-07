@@ -1,0 +1,16 @@
+{
+  "name": "webcrawler-javascript",
+  "version": "1.0.0",
+  "description": "simple webcrawler using javascript",
+  "main": "crawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nelladella",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.75.0",
+    "url-parse": "^1.1.3"
+  }
+}
